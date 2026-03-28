@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simulasi virtual mitosis akar bawang merah menggunakan output Articulate Storyline.">
+  <title>Simulasi | Virtual Lab Mitosis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body data-page="simulasi">
+  <div class="site-shell">
+    <header class="site-header">
+      <nav class="navbar" aria-label="Navigasi utama">
+        <a class="brand" href="../index.html">
+          <span class="brand-mark">Bio</span>
+          <span class="brand-text">
+            <strong>Virtual Biology Lab</strong>
+            <small>Mitosis Allium cepa</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Buka navigasi">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+          <a href="../index.html" data-nav="home">Home</a>
+          <a href="prosedur.html" data-nav="prosedur">Prosedur</a>
+          <a href="simulasi.html" data-nav="simulasi">Simulasi</a>
+          <a href="quiz.html" data-nav="quiz">Quiz</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero reveal">
+        <span class="section-tag">Simulasi Interaktif</span>
+        <h1>Eksplorasi virtual praktikum mitosis</h1>
+        <p>
+          Simulasi berikut menampilkan output Articulate Storyline yang dapat digunakan untuk memperkuat
+          pemahaman konsep dan alur praktikum secara mandiri.
+        </p>
+      </section>
+
+      <section class="simulation-section reveal">
+        <div class="simulation-shell" data-simulation-shell>
+          <div class="simulation-topbar">
+            <span class="simulation-dot dot-red"></span>
+            <span class="simulation-dot dot-yellow"></span>
+            <span class="simulation-dot dot-green"></span>
+            <p>Virtual Biology Lab Console</p>
+          </div>
+          <div class="simulation-loading" data-simulation-loader>
+            <div class="loader-ring" aria-hidden="true"></div>
+            <p>Memuat simulasi laboratorium virtual...</p>
+          </div>
+          <div class="simulation-stage">
+            <div class="simulation-viewport" data-simulation-viewport>
+              <div class="simulation-canvas">
+                <iframe
+                  src="../virtual-labstoryline/story.html"
+                  title="Simulasi Virtual Lab Mitosis Akar Bawang Merah"
+                  loading="lazy"
+                  allowfullscreen
+                  data-simulation-frame
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>
